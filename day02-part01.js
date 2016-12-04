@@ -29,4 +29,4 @@ var code = instructions.reduce(function(acc, instruction){
   return acc + keypad[temp.row][temp.col];
 }, '');
 
-console.log(code);
+console.log(code); // 19636
