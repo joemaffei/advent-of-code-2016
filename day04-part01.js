@@ -994,9 +994,9 @@ var sortedCount = function(room) {
 }
 
 var validateName = function(room) {
-  var checksum = getChecksumArray(room);
-  var sorted = sortedCount(room);
-  /*** WORK IN PROGRESS ***/
+  var checksum = getChecksumArray(room).toString();
+  var sorted = sortedCount(room).slice(0,5).toString();
+  return checksum === sorted;
 }
 
 var realRooms = function(rooms) {
@@ -1011,4 +1011,4 @@ var sumOfRealSectorIDs = function(rooms) {
   }, 0)
 }
 
-console.log(sumOfRealSectorIDs(rooms));
+console.log(sumOfRealSectorIDs(rooms)); // 173787
