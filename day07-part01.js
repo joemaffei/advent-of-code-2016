@@ -2022,4 +2022,4 @@ var result = input.filter(function(line) {
   return line.match(hasABBAs) !== null;
 }).length;
 
-console.log(result);
+console.log(result); 
